@@ -1,0 +1,52 @@
+.loading-screen {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #35131f 0%,
+      #12090d 45%,
+      #050405 100%
+    );
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-heart {
+  font-size: 70px;
+
+  color: #f08aa7;
+
+  text-shadow:
+    0 0 20px rgba(255, 70, 120, 0.8),
+    0 0 60px rgba(255, 70, 120, 0.3);
+}
+
+.loading-content p {
+  margin: 20px 0 10px;
+
+  font-size: 10px;
+
+  letter-spacing: 6px;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.loading-content span {
+  font-family: Georgia, serif;
+
+  font-size: 14px;
+
+  color: rgba(255, 180, 200, 0.7);
+}

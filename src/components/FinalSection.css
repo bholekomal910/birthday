@@ -1,0 +1,183 @@
+.final-section {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  text-align: center;
+}
+
+.final-image {
+  position: absolute;
+
+  inset: -5%;
+
+  background-image:
+    url("/photos/30.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  filter: brightness(0.6);
+
+  animation:
+    finalZoom 18s ease-in-out infinite alternate;
+}
+
+@keyframes finalZoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.final-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(20, 5, 12, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 3, 5, 0.95),
+      transparent 50%,
+      rgba(5, 3, 5, 0.4)
+    );
+}
+
+.final-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 850px;
+
+  padding: 50px 20px;
+}
+
+.final-start {
+  font-size: 10px;
+
+  letter-spacing: 6px;
+
+  color: rgba(255, 190, 205, 0.7);
+}
+
+.final-arrow {
+  margin: 15px;
+
+  color: #ef91aa;
+
+  font-size: 20px;
+}
+
+.final-small {
+  font-size: 9px;
+
+  letter-spacing: 4px;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.final-content h1 {
+  margin: 30px 0 5px;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(60px, 10vw, 130px);
+
+  line-height: 0.85;
+
+  font-weight: 400;
+}
+
+.final-content h1 span {
+  display: block;
+
+  color: #ef91aa;
+
+  font-style: italic;
+
+  text-shadow:
+    0 0 40px rgba(239, 100, 140, 0.35);
+}
+
+.final-content h2 {
+  margin: 25px 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 35px;
+
+  font-weight: 400;
+}
+
+.final-star {
+  color: #ef91aa;
+
+  font-size: 25px;
+}
+
+.final-text {
+  margin: 25px 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.final-forever {
+  margin-top: 35px;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+
+  color: #ef91aa;
+
+  font-style: italic;
+}
+
+.final-date {
+  margin-top: 35px;
+
+  font-size: 10px;
+
+  letter-spacing: 6px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+  .final-content h1 {
+    font-size: 65px;
+  }
+
+  .final-content h2 {
+    font-size: 28px;
+  }
+
+  .final-text {
+    font-size: 14px;
+  }
+}

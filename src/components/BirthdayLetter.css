@@ -1,0 +1,642 @@
+.letter-section {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding: 150px 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(180, 40, 80, 0.16),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(230, 100, 140, 0.08),
+      transparent 30%
+    ),
+    #0b0709;
+}
+
+/* Background glow */
+
+.letter-background-glow {
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(
+      220,
+      70,
+      110,
+      0.08
+    );
+
+  filter: blur(130px);
+
+  pointer-events: none;
+}
+
+/* Main card */
+
+.letter-card {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 900px;
+
+  padding:
+    80px
+    90px;
+
+  border-radius: 28px;
+
+  border:
+    1px solid
+    rgba(
+      239,
+      145,
+      170,
+      0.2
+    );
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(
+        255,
+        255,
+        255,
+        0.065
+      ),
+      rgba(
+        255,
+        255,
+        255,
+        0.018
+      )
+    );
+
+  backdrop-filter: blur(25px);
+
+  box-shadow:
+    0 40px 120px
+      rgba(
+        0,
+        0,
+        0,
+        0.5
+      ),
+    0 0 80px
+      rgba(
+        210,
+        60,
+        110,
+        0.06
+      );
+
+  text-align: center;
+}
+
+/* Top heart */
+
+.letter-top-heart {
+  margin-bottom: 25px;
+
+  font-size: 38px;
+
+  color: #ef91aa;
+
+  animation:
+    letterHeart
+    2s
+    ease-in-out
+    infinite;
+}
+
+@keyframes letterHeart {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* Label */
+
+.letter-label {
+  font-size: 9px;
+
+  letter-spacing: 5px;
+
+  color:
+    rgba(
+      255,
+      190,
+      210,
+      0.65
+    );
+}
+
+/* Heading */
+
+.letter-card h2 {
+  margin:
+    25px
+    0
+    20px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+    clamp(
+      40px,
+      5vw,
+      62px
+    );
+
+  line-height: 1.15;
+
+  font-weight: 400;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.95
+    );
+}
+
+.letter-card h2 span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #ef91aa;
+
+  font-style: italic;
+}
+
+/* Decoration */
+
+.letter-decoration {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin: 30px 0;
+
+  color: #ef91aa;
+
+  font-size: 18px;
+}
+
+.letter-decoration span {
+  width: 70px;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(
+        239,
+        145,
+        170,
+        0.7
+      )
+    );
+}
+
+.letter-decoration span:last-child {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(
+        239,
+        145,
+        170,
+        0.7
+      ),
+      transparent
+    );
+}
+
+/* Date */
+
+.letter-date {
+  margin-bottom: 50px;
+
+  font-size: 10px;
+
+  letter-spacing: 4px;
+
+  color: #ef91aa;
+}
+
+/* Letter content */
+
+.letter-content {
+  max-width: 700px;
+
+  margin: auto;
+}
+
+.letter-content p {
+  margin:
+    0
+    0
+    28px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 17px;
+
+  line-height: 2.05;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.67
+    );
+}
+
+.letter-content em {
+  color: #ef91aa;
+
+  font-style: italic;
+}
+
+.letter-highlight {
+  padding:
+    20px
+    25px;
+
+  margin:
+    40px
+    0 !important;
+
+  border-left:
+    2px solid
+    rgba(
+      239,
+      145,
+      170,
+      0.7
+    );
+
+  border-right:
+    2px solid
+    rgba(
+      239,
+      145,
+      170,
+      0.25
+    );
+
+  background:
+    rgba(
+      239,
+      145,
+      170,
+      0.035
+    );
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.82
+    ) !important;
+
+  font-size: 19px !important;
+
+  font-style: italic;
+}
+
+.letter-highlight strong {
+  color: #ef91aa;
+
+  font-weight: 400;
+}
+
+.letter-special {
+  margin:
+    55px
+    0 !important;
+
+  font-size:
+    clamp(
+      21px,
+      3vw,
+      28px
+    ) !important;
+
+  line-height: 1.8 !important;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.88
+    ) !important;
+}
+
+.letter-special::first-line {
+  color: #ef91aa;
+}
+
+.letter-final-message {
+  margin-top: 55px !important;
+
+  font-size:
+    clamp(
+      21px,
+      3vw,
+      27px
+    ) !important;
+
+  color: #ef91aa !important;
+
+  font-style: italic;
+}
+
+/* Ending */
+
+.letter-ending {
+  margin-top: 70px;
+
+  padding-top: 20px;
+}
+
+.letter-ending-line {
+  width: 100px;
+
+  height: 1px;
+
+  margin:
+    0
+    auto
+    40px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(
+        239,
+        145,
+        170,
+        0.8
+      ),
+      transparent
+    );
+}
+
+.letter-ending > p:first-of-type {
+  max-width: 600px;
+
+  margin: auto;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.72
+    );
+}
+
+.letter-big-heart {
+  margin:
+    35px
+    0;
+
+  font-size: 55px;
+
+  color: #ef91aa;
+
+  text-shadow:
+    0 0 30px
+      rgba(
+        239,
+        80,
+        130,
+        0.5
+      );
+
+  animation:
+    bigLetterHeart
+    1.8s
+    ease-in-out
+    infinite;
+}
+
+@keyframes bigLetterHeart {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.letter-ending h3 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 35px;
+
+  font-weight: 400;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.9
+    );
+}
+
+.letter-ending h3 span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #ef91aa;
+
+  font-style: italic;
+}
+
+.letter-sign {
+  margin-top: 30px !important;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 22px !important;
+
+  color: #ef91aa !important;
+
+  font-style: italic;
+}
+
+.letter-ending small {
+  display: block;
+
+  margin-top: 25px;
+
+  font-size: 8px;
+
+  letter-spacing: 4px;
+
+  color:
+    rgba(
+      255,
+      255,
+      255,
+      0.32
+    );
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .letter-card {
+    padding:
+      65px
+      45px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .letter-section {
+    padding:
+      90px
+      15px;
+  }
+
+  .letter-card {
+    padding:
+      55px
+      25px;
+
+    border-radius: 22px;
+  }
+
+  .letter-label {
+    font-size: 7px;
+
+    letter-spacing: 3px;
+  }
+
+  .letter-card h2 {
+    font-size: 38px;
+  }
+
+  .letter-date {
+    margin-bottom: 40px;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+  }
+
+  .letter-content p {
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+  }
+
+  .letter-highlight {
+    padding:
+      18px
+      15px;
+
+    margin:
+      35px
+      0 !important;
+
+    font-size: 16px !important;
+  }
+
+  .letter-special {
+    margin:
+      45px
+      0 !important;
+
+    font-size: 20px !important;
+  }
+
+  .letter-final-message {
+    font-size: 20px !important;
+  }
+
+  .letter-ending > p:first-of-type {
+    font-size: 15px;
+  }
+
+  .letter-ending h3 {
+    font-size: 28px;
+  }
+
+  .letter-ending small {
+    font-size: 7px;
+
+    letter-spacing: 2px;
+  }
+}

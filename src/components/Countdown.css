@@ -1,0 +1,146 @@
+.countdown-section {
+  min-height: 80vh;
+
+  padding: 130px 7%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #0b080a;
+
+  text-align: center;
+}
+
+.countdown-heading p {
+  font-size: 10px;
+
+  letter-spacing: 5px;
+
+  color: rgba(255, 180, 200, 0.65);
+}
+
+.countdown-heading h2 {
+  margin: 20px 0;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(42px, 6vw, 70px);
+
+  font-weight: 400;
+}
+
+.countdown-heading h2 span {
+  display: block;
+
+  color: #e98aa5;
+
+  font-style: italic;
+}
+
+.countdown-heading > div {
+  font-size: 28px;
+
+  color: #ef91aa;
+
+  animation: countdownHeart 2s infinite;
+}
+
+@keyframes countdownHeart {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.countdown-boxes {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin-top: 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.countdown-box {
+  padding: 40px 20px;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.015)
+    );
+
+  backdrop-filter: blur(15px);
+
+  transition: 0.4s ease;
+}
+
+.countdown-box:hover {
+  border-color: rgba(239, 130, 160, 0.4);
+
+  box-shadow:
+    0 20px 50px rgba(230, 60, 110, 0.12);
+}
+
+.countdown-box strong {
+  display: block;
+
+  font-family: Georgia, serif;
+
+  font-size: 55px;
+
+  font-weight: 400;
+}
+
+.countdown-box span {
+  font-size: 8px;
+
+  letter-spacing: 3px;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.birthday-now {
+  margin-top: 60px;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(30px, 5vw, 60px);
+
+  color: #ef91aa;
+
+  text-shadow:
+    0 0 35px rgba(239, 100, 140, 0.4);
+}
+
+@media (max-width: 650px) {
+  .countdown-section {
+    padding: 100px 20px;
+  }
+
+  .countdown-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .countdown-box {
+    padding: 30px 10px;
+  }
+
+  .countdown-box strong {
+    font-size: 40px;
+  }
+}
