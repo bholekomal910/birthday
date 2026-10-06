@@ -3,7 +3,7 @@ import "./FinalSection.css";
 
 function FinalSection() {
   return (
-    <section className="final-section">
+<section className="final-section" id="final">
 
       <div className="final-image"></div>
 

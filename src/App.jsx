@@ -1,8 +1,11 @@
 import LoadingScreen from "./components/LoadingScreen";
+import MusicPlayer from "./components/MusicPlayer";
+
 import Hero from "./components/Hero";
 import Countdown from "./components/Countdown";
 import Memories from "./components/Memories";
 import HisPhotos from "./components/HisPhotos";
+import VideoSection from "./components/VideoSection";
 import OurStory from "./components/OurStory";
 import Reasons from "./components/Reasons";
 import BirthdayLetter from "./components/BirthdayLetter";
@@ -15,6 +18,7 @@ function App() {
   return (
     <div className="app">
       <LoadingScreen />
+      <MusicPlayer />
 
       <main>
         <Hero />
@@ -24,6 +28,8 @@ function App() {
         <Memories />
 
         <HisPhotos />
+
+        <VideoSection />
 
         <OurStory />
 

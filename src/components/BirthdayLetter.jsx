@@ -3,7 +3,7 @@ import "./BirthdayLetter.css";
 
 function BirthdayLetter() {
   return (
-    <section className="letter-section">
+<section className="letter-section" id="birthday-letter">
 
       <div className="letter-background-glow"></div>
 

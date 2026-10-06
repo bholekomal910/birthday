@@ -30,8 +30,7 @@ function Reasons() {
   ];
 
   return (
-    <section className="reasons-section">
-
+<section className="reasons-section" id="reasons">
       <motion.div
         className="reasons-heading"
         initial={{ opacity: 0, y: 40 }}

@@ -6,8 +6,7 @@ function Surprise() {
   const [opened, setOpened] = useState(false);
 
   return (
-    <section className="surprise-section">
-
+<section className="surprise-section" id="surprise">
       {!opened ? (
         <motion.div
           className="surprise-content"
